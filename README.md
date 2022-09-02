@@ -1,8 +1,9 @@
 # I choose you!
 
 This is a toy script that I wrote for a one-day hackathon at
-[boot.dev](https://boot.dev/). The assignment was to write something in Python,
-and to make use of [PokéAPI](https://pokeapi.co/).
+[boot.dev](https://boot.dev/). (I'm in the "senior" category.) The assignment
+was to write something in Python, and to make use of
+[PokéAPI](https://pokeapi.co/).
 
 I had very little free time on the day in question, so I did something as simple
 as possible. This script will pull data for a random Pokémon from PokéAPI;
