@@ -29,7 +29,7 @@ def main():
     r2 = requests.get(img_url, stream=True)
 
     if r2.status_code != 200:
-        print(f"Error: PokéAPI request failed (status code {r1.status_code})")
+        print(f"Error: PokéAPI request failed (status code {r2.status_code})")
         return
 
     with tempfile.NamedTemporaryFile() as temp:
@@ -39,7 +39,7 @@ def main():
             temp, is_unicode=True, is_truecolor=True, is_256color=False, width=40
         )
 
-        # Wait to print the name until the image is ready
+        # Print the name, now that the image is ready
         p_name = j["name"].upper()
         print("========================================")
         print(f"    \033[1mI choose you, {p_name}!\033[0m")
@@ -52,7 +52,7 @@ def main():
     for stat in j["stats"]:
         s_name = stat["stat"]["name"]
 
-        # Replace dashes with spaces, and capitalize each word
+        # Replace hyphens with spaces, and capitalize each word
         s_name = " ".join([word.capitalize() for word in s_name.split("-")])
 
         # HP should be all caps
@@ -69,7 +69,7 @@ def main():
     for ability in j["abilities"]:
         a_name = ability["ability"]["name"]
 
-        # Replace dashes with spaces, and capitalize each word
+        # Replace hyphens with spaces, and capitalize each word
         a_name = " ".join([word.capitalize() for word in a_name.split("-")])
 
         abilities.append(a_name)
