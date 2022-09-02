@@ -1,7 +1,7 @@
 # I choose you!
 
 This is a toy script that I wrote for a one-day hackathon at
-[boot.dev](https://boot.dev/). (I'm in the "senior" category.) The assignment
+[Boot.dev](https://boot.dev/). (I'm in the "senior" category.) The assignment
 was to write something in Python, and to make use of
 [PokéAPI](https://pokeapi.co/).
 
@@ -18,13 +18,25 @@ options in CLImage. (Without those settings, the image quality is just awful.)
 
 ## Usage
 
+Clone the repo:
+
+```sh
+git clone https://github.com/theodore-s-beers/i-choose-you.git
+```
+
+Navigate to the source directory:
+
+```sh
+cd i-choose-you
+```
+
 Install dependencies:
 
 ```sh
 pip3 install -r requirements.txt
 ```
 
-Run script:
+Run the script:
 
 ```sh
 python3 choose.py
