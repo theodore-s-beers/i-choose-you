@@ -18,6 +18,8 @@ options in CLImage. (Without those settings, the image quality is just awful.)
 
 ## Usage
 
+_This assumes that you're running Linux or macOS._
+
 Clone the repo:
 
 ```sh
@@ -30,14 +32,26 @@ Navigate to the source directory:
 cd i-choose-you
 ```
 
+Create a virtual environment:
+
+```sh
+python3 -m venv venv
+```
+
+Activate the virtual environment:
+
+```sh
+source env/bin/activate
+```
+
 Install dependencies:
 
 ```sh
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Run the script:
 
 ```sh
-python3 choose.py
+python choose.py
 ```
