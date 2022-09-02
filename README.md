@@ -50,7 +50,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Run the script:
+Run the script (it picks a random Pokémon each time):
 
 ```sh
 python choose.py
