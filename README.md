@@ -50,6 +50,12 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
+For some obscure reason, you may also need to (re)install `setuptools`:
+
+```sh
+pip install setuptools
+```
+
 Run the script (it picks a random Pokémon each time):
 
 ```sh
